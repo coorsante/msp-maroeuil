@@ -6,6 +6,7 @@ Site statique (HTML/CSS/JS, sans dépendance) prêt pour GitHub Pages.
 - `index.html` – Accueil : label ARS, chiffres, projet de santé, actualités, vidéo, infos pratiques, plan, partenaires
 - `msp.html` – Qu'est-ce qu'une MSP ? (vidéo FÉCOP / France Assos Santé), historique, protocoles, SISA
 - `equipe.html` – Les 12 professionnels associés de la SISA en exercice, filtre + recherche
+- `evenements.html` – Nos événements : marches santé, ateliers, prévention (tri automatique à venir / passés, affiches dans `images/`)
 - `cpts.html` – Présentation d'une CPTS et de la CPTS des Campagnes de l'Artois
 - `avis.html` – « Votre avis compte » : lien vers l'enquête de satisfaction 2026
 

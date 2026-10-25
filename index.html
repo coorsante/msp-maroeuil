@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MSP de Marœuil — Maison de Santé Pluriprofessionnelle</title>
 <meta name="description" content="Maison de Santé Pluriprofessionnelle de Marœuil reconnue par l'ARS Hauts-de-France : équipe, horaires, actualités et informations pratiques.">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f7a6c'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='%23fff'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -72,9 +72,9 @@
       <div class="stat reveal d3"><div class="num" data-count="2021">2021</div><div class="lbl">reconnaissance par l'ARS</div></div>
     </div>
     <div class="label-ars reveal">
-      <div class="seal"><span><b>ARS</b>Hauts-de-<br>France</span></div>
+      <div class="logos"><img src="images/logo-ars-hdf.png" alt="Agence Régionale de Santé Hauts-de-France" class="logo-ars"><img src="images/logo-france-sante.png" alt="France Santé" class="logo-fs"></div>
       <div>
-        <h3>Une Maison de Santé Pluriprofessionnelle reconnue</h3>
+        <h3>Une Maison de Santé Pluriprofessionnelle reconnue, membre du réseau France Santé</h3>
         <p>Le projet de santé de la MSP de Marœuil a été <strong>validé le 1<sup>er</sup> décembre 2021 par l'Agence Régionale de Santé des Hauts-de-France</strong>. Cette reconnaissance atteste d'un exercice coordonné entre professionnels, de protocoles de prise en charge partagés et d'actions de prévention pour la population.</p>
         <a class="btn outline" href="msp.html" style="margin-top:.6rem">En savoir plus sur notre MSP</a>
       </div>
@@ -103,35 +103,108 @@
     <span class="eyebrow">Actualités</span>
     <h2>La vie de la maison de santé</h2>
     <p class="lead">Marches santé, ateliers diététiques, journées de prévention : retrouvez tout le programme sur la page <a href="evenements.html">Nos événements</a>.</p>
-    <div class="news">
-      <article class="card reveal">
-        <span class="tag orange">À venir</span>
-        <p class="date">Samedi 31 octobre 2026 · 10h–12h</p>
-        <h3>Atelier « Colopathie fonctionnelle »</h3>
-        <p>Mieux comprendre pour mieux vivre au quotidien : échanges sur les symptômes, conseils pratiques et alimentation. Animé par une diététicienne nutritionniste et un professionnel de santé. Tarif : 5 € · 8 personnes maximum.</p>
-        <p><strong>Réservation au secrétariat</strong>, sur place ou au <a href="tel:+33321243666">03 21 24 36 66</a>.</p>
-      </article>
-      <article class="card reveal d1">
-        <span class="tag orange">À venir</span>
-        <p class="date">Jeudis 29 octobre &amp; 26 novembre 2026 · départ 13h30</p>
-        <h3>Marche santé</h3>
-        <p>Marchons ensemble, à votre rythme ! Gratuit, sur inscription · 10 places maximum.</p>
-        <p><strong>Inscription auprès de la maison de santé</strong> au <a href="tel:+33321243666">03 21 24 36 66</a>.</p>
-      </article>
-      <article class="card reveal d2">
-        <span class="tag">Enquête</span>
-        <p class="date">2026</p>
-        <h3>Votre avis compte !</h3>
-        <p>Aidez-nous à améliorer l'accueil et l'organisation de la maison de santé en répondant à notre enquête de satisfaction anonyme. Quelques minutes suffisent.</p>
-        <p><a class="btn primary glow" href="https://docs.google.com/forms/d/e/1FAIpQLSfsdzzro67EBps7XQVcpXzmyrs85FIGmVKncSSU0X3LjnEBNA/viewform" target="_blank" rel="noopener" style="margin-top:.6rem">Répondre à l'enquête ↗</a></p>
-      </article>
-      <article class="card past reveal">
-        <span class="tag grey">Retour sur</span>
-        <p class="date">Mercredi 14 octobre 2026</p>
-        <h3>Octobre Rose à la MSP</h3>
-        <p>Après-midi de sensibilisation au dépistage du cancer du sein, avec un atelier d'auto-palpation sur buste animé par Mme Émilie Leroux, sage-femme, en partenariat avec la Pharmacie Ternaux.</p>
-      </article>
-    </div>
+    <div class="events" id="home-events"><article class="event" data-date="2026-04-09" data-type="marche">
+  <button class="poster" data-full="images/marche-2026-04-09.jpg" aria-label="Agrandir l'affiche : Marche santé"><img src="images/marche-2026-04-09.jpg" alt="Affiche : Marche santé – Jeudi 9 avril 2026 · 13h30" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag ">🚶 Marche santé</span>
+    <p class="date">Jeudi 9 avril 2026 · 13h30</p>
+    <h3>Marche santé</h3>
+    <p>Pour tous les patients, quelle que soit la condition physique : l'important, c'est de marcher ensemble, à son rythme.</p>
+    <ul class="ticks"><li>Encadrée par Dr Julie Fatous et Mme Célia Boughriet</li><li>Gratuit · 2 groupes de 5 participants</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-05-07" data-type="marche">
+  <button class="poster" data-full="images/marche-2026-05-07.jpg" aria-label="Agrandir l'affiche : Marche santé"><img src="images/marche-2026-05-07.jpg" alt="Affiche : Marche santé – Jeudi 7 mai 2026 · 13h30" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag ">🚶 Marche santé</span>
+    <p class="date">Jeudi 7 mai 2026 · 13h30</p>
+    <h3>Marche santé</h3>
+    <p>Pour tous les patients, quelle que soit la condition physique : l'important, c'est de marcher ensemble, à son rythme.</p>
+    <ul class="ticks"><li>Encadrée par Dr Julie Fatous et Mme Célia Boughriet</li><li>Gratuit · 2 groupes de 5 participants</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-06-13" data-type="atelier">
+  <button class="poster" data-full="images/atelier-diabete-2026-06-13.jpg" aria-label="Agrandir l'affiche : Atelier « Nutrition santé – Patients diabétiques »"><img src="images/atelier-diabete-2026-06-13.jpg" alt="Affiche : Atelier « Nutrition santé – Patients diabétiques » – Samedi 13 juin 2026 · 10h" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag orange">🥗 Atelier diététique</span>
+    <p class="date">Samedi 13 juin 2026 · 10h</p>
+    <h3>Atelier « Nutrition santé – Patients diabétiques »</h3>
+    <p>Apprendre à composer des menus sains et réviser ses connaissances sur l'alimentation équilibrée.</p>
+    <ul class="ticks"><li>Atelier de 2h animé par Mme Clara Masclef, diététicienne nutritionniste</li><li>Tarif : 5 € · 8 personnes maximum</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-09-03" data-type="marche">
+  <button class="poster" data-full="images/marche-2026-09-03.jpg" aria-label="Agrandir l'affiche : Marche santé"><img src="images/marche-2026-09-03.jpg" alt="Affiche : Marche santé – Jeudi 3 septembre 2026 · 13h30" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag ">🚶 Marche santé</span>
+    <p class="date">Jeudi 3 septembre 2026 · 13h30</p>
+    <h3>Marche santé</h3>
+    <p>Marcher ensemble, c'est prendre soin de soi ! Un moment convivial et bénéfique pour la santé.</p>
+    <ul class="ticks"><li>Encadrée par Dr Julie Fatous et Mme Célia Boughriet</li><li>Gratuit · 2 groupes de 5 participants</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-09-19" data-type="atelier">
+  <button class="poster" data-full="images/atelier-menopause-2026-09-19.jpg" aria-label="Agrandir l'affiche : Atelier « Nutrition santé – Ménopause »"><img src="images/atelier-menopause-2026-09-19.jpg" alt="Affiche : Atelier « Nutrition santé – Ménopause » – Samedi 19 septembre 2026 · 10h" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag orange">🥗 Atelier diététique</span>
+    <p class="date">Samedi 19 septembre 2026 · 10h</p>
+    <h3>Atelier « Nutrition santé – Ménopause »</h3>
+    <p>Prise de poids, ballonnements, bouffées de chaleur : les aliments à favoriser pendant la ménopause.</p>
+    <ul class="ticks"><li>Atelier de 2h animé par Mme Clara Masclef, diététicienne nutritionniste</li><li>Tarif : 5 € · 8 personnes maximum</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-10-14" data-type="prevention">
+  <button class="poster" data-full="images/octobre-rose-2026-10-14.jpg" aria-label="Agrandir l'affiche : Octobre Rose"><img src="images/octobre-rose-2026-10-14.jpg" alt="Affiche : Octobre Rose – Mercredi 14 octobre 2026 · 14h–16h" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag rose">🎗️ Prévention</span>
+    <p class="date">Mercredi 14 octobre 2026 · 14h–16h</p>
+    <h3>Octobre Rose</h3>
+    <p>Après-midi de sensibilisation au dépistage du cancer du sein : informations, échanges avec des professionnels et atelier d'auto-palpation sur buste 3D.</p>
+    <ul class="ticks"><li>Atelier animé par Mme Émilie Leroux, sage-femme</li><li>En partenariat avec la Pharmacie Ternaux</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-10-29" data-type="marche">
+  <button class="poster" data-full="images/marche-2026-10-29.jpg" aria-label="Agrandir l'affiche : Marche santé"><img src="images/marche-2026-10-29.jpg" alt="Affiche : Marche santé – Jeudi 29 octobre 2026 · 13h30" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag ">🚶 Marche santé</span>
+    <p class="date">Jeudi 29 octobre 2026 · 13h30</p>
+    <h3>Marche santé</h3>
+    <p>Marchons ensemble, à votre rythme ! Pour tous les patients, quelle que soit la condition physique. Rendez-vous devant la maison de santé.</p>
+    <ul class="ticks"><li>Encadrée par Dr Julie Fatous, médecin généraliste, et Mme Célia Boughriet, infirmière</li><li>Gratuit · inscription obligatoire · 2 groupes de 5 participants</li><li>Venez après avoir mangé, en tenue de sport et baskets</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-10-31" data-type="atelier">
+  <button class="poster" data-full="images/atelier-colopathie-2026-10-31.jpg" aria-label="Agrandir l'affiche : Atelier « Colopathie fonctionnelle »"><img src="images/atelier-colopathie-2026-10-31.jpg" alt="Affiche : Atelier « Colopathie fonctionnelle » – Samedi 31 octobre 2026 · 10h–12h" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag orange">🥗 Atelier diététique</span>
+    <p class="date">Samedi 31 octobre 2026 · 10h–12h</p>
+    <h3>Atelier « Colopathie fonctionnelle »</h3>
+    <p>Mieux comprendre pour mieux vivre au quotidien : échanger sur ses symptômes, adapter son alimentation, découvrir des conseils pratiques.</p>
+    <ul class="ticks"><li>Animé par une diététicienne nutritionniste et un professionnel de santé</li><li>Tarif : 5 € · 8 personnes maximum</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+<article class="event" data-date="2026-11-26" data-type="marche">
+  <button class="poster" data-full="images/marche-2026-11-26.jpg" aria-label="Agrandir l'affiche : Marche santé"><img src="images/marche-2026-11-26.jpg" alt="Affiche : Marche santé – Jeudi 26 novembre 2026 · 13h30" loading="lazy"><span class="ribbon">À venir</span></button>
+  <div class="ebody">
+    <span class="tag ">🚶 Marche santé</span>
+    <p class="date">Jeudi 26 novembre 2026 · 13h30</p>
+    <h3>Marche santé</h3>
+    <p>Marchons ensemble, à votre rythme ! Pour tous les patients, quelle que soit la condition physique. Rendez-vous devant la maison de santé.</p>
+    <ul class="ticks"><li>Encadrée par Dr Julie Fatous, médecin généraliste, et Mme Célia Boughriet, infirmière</li><li>Gratuit · inscription obligatoire · 2 groupes de 5 participants</li><li>Venez après avoir mangé, en tenue de sport et baskets</li></ul>
+    <a class="btn outline book" href="tel:+33321243666">📞 Réserver : 03 21 24 36 66</a>
+  </div>
+</article>
+</div>
+    <p style="text-align:center;margin-top:1.5rem"><a class="btn solid" href="evenements.html">Voir tous nos événements →</a></p>
+    <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Affiche agrandie"><button class="lb-close" aria-label="Fermer">✕</button><img alt=""></div>
   </div>
 </section>
 
@@ -197,7 +270,8 @@
     <span class="eyebrow">Partenaires</span>
     <h2>Ils accompagnent la MSP</h2>
     <div class="partners">
-      <a class="partner reveal" href="https://www.hauts-de-france.ars.sante.fr/" target="_blank" rel="noopener"><strong>ARS Hauts-de-France</strong><span>Reconnaissance du projet de santé</span></a>
+      <a class="partner logo-card reveal" href="https://www.hauts-de-france.ars.sante.fr/" target="_blank" rel="noopener"><img src="images/logo-ars-hdf.png" alt="ARS Hauts-de-France"><span>Reconnaissance du projet de santé</span></a>
+      <div class="partner logo-card reveal"><img src="images/logo-france-sante.png" alt="France Santé"><span>Réseau France Santé</span></div>
       <a class="partner reveal d1" href="https://www.ameli.fr/" target="_blank" rel="noopener"><strong>L'Assurance Maladie</strong><span>Accord conventionnel interprofessionnel</span></a>
       <a class="partner reveal d2" href="https://cptscampagnesartois.fr/" target="_blank" rel="noopener"><strong>CPTS des Campagnes de l'Artois</strong><span>Coordination à l'échelle du territoire</span></a>
       <div class="partner reveal"><strong>Pharmacie Ternaux</strong><span>Partenaire des actions de prévention à Marœuil</span></div>
@@ -228,6 +302,6 @@
   </div>
 </footer>
 <button class="totop" aria-label="Retour en haut">↑</button>
-<script src="main.js?v=4"></script>
+<script src="main.js?v=5"></script>
 </body>
 </html>

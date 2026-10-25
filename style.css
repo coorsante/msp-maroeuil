@@ -286,3 +286,20 @@ footer li{padding:.2rem 0}
 .partner.logo-card img{max-height:70px;width:auto;max-width:160px}
 .fs-pending{margin:0;display:flex;flex-direction:column;align-items:center;gap:.25rem}
 .fs-pending figcaption{font-size:.68rem;font-weight:700;color:#9a4a12;background:var(--accent-soft);padding:.1rem .5rem;border-radius:999px;white-space:nowrap}
+
+/* ---------- Couleur par profession ---------- */
+.pro-med{--pc:#0f7a6c;--pc-soft:#e3f3f0;--pc-line:#a9d9cf}
+.pro-ide{--pc:#2f6fb5;--pc-soft:#e7f0fb;--pc-line:#b5cdee}
+.pro.pro-med,.pro.pro-ide{background:linear-gradient(180deg,var(--pc-soft) 0%,#fff 70%);border:1px solid var(--pc-line);border-top:5px solid var(--pc)}
+.pro.pro-med:hover,.pro.pro-ide:hover{border-color:var(--pc)}
+.pro .avatar{width:56px;height:56px;color:#fff;background:var(--pc,var(--brand));box-shadow:0 4px 12px color-mix(in srgb,var(--pc) 35%,transparent);transition:transform .35s ease}
+.pro:hover .avatar{transform:rotate(-8deg) scale(1.08)}
+.pro .role{color:var(--pc);font-weight:600}
+.pro .btn.outline{border-color:var(--pc);color:var(--pc)}
+.pro .btn.outline:hover{background:var(--pc-soft)}
+.pro .btn.solid{background:var(--pc)}
+.chip-med[aria-pressed="true"]{background:#0f7a6c;border-color:#0f7a6c}
+.chip-ide[aria-pressed="true"]{background:#2f6fb5;border-color:#2f6fb5}
+.chip-med::before,.chip-ide::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:.45rem;vertical-align:middle}
+.chip-med::before{background:#0f7a6c}.chip-ide::before{background:#2f6fb5}
+.chip[aria-pressed="true"]::before{background:#fff}

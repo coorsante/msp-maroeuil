@@ -284,3 +284,5 @@ footer li{padding:.2rem 0}
 @media (max-width:560px){.label-ars .logos{flex-direction:row;justify-content:center}}
 .partner.logo-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.5rem;background:#fff}
 .partner.logo-card img{max-height:70px;width:auto;max-width:160px}
+.fs-pending{margin:0;display:flex;flex-direction:column;align-items:center;gap:.25rem}
+.fs-pending figcaption{font-size:.68rem;font-weight:700;color:#9a4a12;background:var(--accent-soft);padding:.1rem .5rem;border-radius:999px;white-space:nowrap}
